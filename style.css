@@ -3,6 +3,7 @@ body{
     font-family: "Raleway", sans-serif;
     font-size: 14px;
     color: #6c7279;
+    background-color: #000;
 }
 
 *,
@@ -11,3 +12,54 @@ body{
     box-sizing: border-box;
 }
 
+
+/* Container
+==================*/
+
+.container {
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+/* Header 
+==================*/
+
+.header{
+    
+}
+
+.header__inner{
+    padding: 35px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #515369;
+}
+
+/* Nav 
+==================*/
+
+.nav{
+    display: flex;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.nav__link{
+    margin-left: 50px;
+    color: #fff;
+    text-decoration: none;
+    opacity: .75;
+    transition: opacity .2s linear;
+}
+
+.nav__link:first-child{
+    margin-left: 0;
+}
+
+.nav__link:hover{
+    opacity: 1;
+    
+}
