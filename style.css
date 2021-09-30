@@ -479,3 +479,48 @@ p{
 .copyright__text span{
     color: #fff;
 }
+
+/* Burger
+==================*/
+.burger{
+    display: none;
+}
+
+/* Media
+==================*/
+
+@media(max-width: 991px){
+
+    /* Nav */
+    .nav{
+        display: none;
+    }
+
+    /* Burger */
+    .burger{
+        display: block;
+    }
+
+    /* Intro */
+    .intro__title{
+        font-size: 40px;
+    }
+
+}
+
+@media(max-width: 991px){
+     /* Intro */
+    .intro{
+        height: auto;
+        padding-top: 130px;
+        padding-bottom: 30px;
+    }
+    .intro__title{
+        font-size: 30px;
+    }
+
+    .intro__subtitle{
+        margin-bottom: 30px;
+        font-size: 16px;
+    }
+}
