@@ -5,7 +5,8 @@ $(function(){
     let intro = $("#intro");
     let introH = intro.innerHeight();;
     let scrollPos = $(window).scrollTop();
-
+    let nav = $("#nav")
+    let navToggle = $("#navToggle")
     checkScroll(scrollPos, introH)
 
     $(window).on("scroll resize", function(){
@@ -29,11 +30,16 @@ $(function(){
 
         let blockID = $(this).data('scroll')
         let blockOffset = $(blockID).offset().top
-
+        
+        nav.removeClass("show");
         $("html, body").animate({
             scrollTop: blockOffset - 70
         }, 700)
     })
     
-
+    /* Nav Toggle */
+    navToggle.on("click", function(event){
+        event.preventDefault();
+        nav.toggleClass("show");
+    })
 });
