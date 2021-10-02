@@ -93,7 +93,7 @@ p{
     background-size: cover;
 }
 .intro__inner{
-    min-width: 970px;
+    max-width: 970px;
     width: 100%;
     margin: 0 auto;
     text-align: center;
@@ -565,6 +565,19 @@ p{
      .social{
          justify-content: center;
      }
+     /* Reviews */
+     .reviews__photo{
+         width: 100%;
+         margin: 15px 0 40px;
+         overflow: hidden;
+     }
+     .reviews__content{
+         width: 100%;
+         padding-left: 0;
+         padding-bottom: 40px;
+     }
+     
+
 }
 
 @media(max-width: 767px){
@@ -606,5 +619,19 @@ p{
     .team__item{
         width: 100%;        
     }
-
+    /* Reviews */
+    .reviews__text{
+        font-size: 25px;
+    }
+    /* Button */
+    .btn--long{
+        min-width: 260px;
+    }
+    /* Download */
+    .download{
+        margin: 50px 0;
+    }
+    .download__title{
+        font-size: 24px;
+    }
 }
